@@ -1,0 +1,576 @@
+@font-face {
+  font-family: "ClashDisplayRegular";
+  src: url(../fonts/ClashDisplayRegular.otf);
+}
+
+@font-face {
+  font-family: "ClashDisplayBold";
+  src: url(../fonts/ClashDisplayBold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ClashDisplayRegular";
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+h1 {
+  font-family: "ClashDisplayBold";
+}
+
+p {
+  text-transform: capitalize;
+}
+
+button,
+li {
+  cursor: pointer;
+}
+
+/* ****** Navbar ******  */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+nav button {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+nav div > img {
+  height: 80%;
+}
+
+/* ****** Hero Section ******  */
+
+.hero-section {
+  display: flex;
+  padding: 0 8vw;
+  min-height: 90vh;
+  align-items: end;
+}
+
+.hero-section .left {
+  flex: 1;
+}
+
+.hero-section .left img {
+  width: 80%;
+  height: 40vh;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-weight: 600;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.hero-section button {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  margin-left: 0.5rem;
+}
+
+.hero-section .right {
+  position: relative;
+  min-height: 75vh;
+  flex: 1;
+}
+
+.hero-section .right img {
+  position: absolute;
+  height: 95%;
+  border-radius: 2rem;
+}
+
+.hero-section img:nth-child(1) {
+  z-index: 3;
+  top: -20%;
+  left: -5%;
+}
+
+.hero-section img:nth-child(2) {
+  z-index: 2;
+  top: -8%;
+  left: 16%;
+}
+
+.hero-section img:nth-child(3) {
+  z-index: 1;
+  top: 4%;
+  left: 30%;
+}
+
+/* ****** Features Section ******  */
+
+.features-section {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.features-section .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/ring.png);
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  min-width: 50vw;
+  background-position: center;
+}
+
+.features-section .left img {
+  height: 70%;
+  margin-left: 2rem;
+}
+
+.features-section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.features-section .heading h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.features-section .heading h3 {
+  color: #ff5555;
+  text-transform: uppercase;
+}
+
+.features-section .content p {
+  font-weight: 600;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.features-section .content h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* ****** Advantages Section 1 ******  */
+
+.advantages-section-1 {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.advantages-section-1 .left {
+  align-content: center;
+  padding: 0 0 0 8vw;
+}
+
+.advantages-section-1 .right {
+  width: 50vw;
+}
+
+.advantages-section-1 .content {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.advantages-section-1 p {
+  color: grey;
+}
+
+.advantages-section-1 h1 {
+  font-size: 3rem;
+}
+
+.advantages-section-1 .heading {
+  margin-bottom: 1rem;
+}
+
+.advantages-section-1 .heading h3 {
+  color: #ff5555;
+  text-transform: uppercase;
+}
+
+.advantages-section-1 h2 {
+  font-size: 1.5rem;
+}
+
+.advantages-section-1 .content h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.advantages-section-1 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/ring.png);
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  min-width: 50vw;
+  background-position: center;
+}
+
+/* ****** Advantages Section 2 ******  */
+
+.advantages-section-2 {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.advantages-section-2 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/ring.png);
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  min-width: 50vw;
+  background-position: center;
+}
+
+.advantages-section-2 .right {
+  align-content: center;
+  padding: 0 12rem 0 1rem;
+  font-weight: 600;
+}
+
+.advantages-section-2 .content h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.advantages-section-2 p {
+  color: grey;
+}
+
+/* ****** Testimonial Section ******  */
+
+.testimonial-section {
+  min-height: 100vh;
+  width: 100%;
+  font-weight: 600;
+}
+.testimonial-section .heading h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.testimonial-section .content {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-section .right {
+  width: 50vw;
+  padding: 0 12rem 0 1rem;
+}
+
+.testimonial-section .left {
+  padding-left: 6rem;
+}
+
+.testimonial-section .left img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.testimonial-section h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.testimonial-section p {
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
+/* ****** FAQ Section ******  */
+
+.faq-section {
+  min-height: 100vh;
+  width: 100%;
+  font-weight: 600;
+  padding: 0 8vw;
+}
+
+.faq-section small {
+  color: #ff5555;
+  font-size: 1rem;
+}
+
+.faq-section h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.faq-section p {
+  color: grey;
+}
+
+.faq-section .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.faq-section .box {
+  width: 49%;
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.faq-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.faq-section .bg-pink {
+  background-color: #ff5555;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.faq-section .bg-pink p {
+  color: #fff;
+}
+
+/* ****** Last Section ******  */
+
+.last-section {
+  min-height: 100vh;
+  padding: 0 8vw;
+  align-content: center;
+}
+
+.last-section img {
+  width: -webkit-fill-available;
+}
+
+/* ****** Footer ******  */
+
+footer {
+  min-height: 50dvh;
+}
+
+footer .container {
+  display: flex;
+  padding: 0 6rem 2rem 6rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer .container > div {
+  flex: 1;
+}
+
+footer ul {
+  list-style: none;
+  font-weight: 600;
+}
+
+footer li {
+  margin: 1rem 0;
+}
+
+.mail-section {
+  flex: 2 !important;
+}
+
+footer button {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  width: 50%;
+}
+
+footer small {
+  display: block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+footer input {
+  padding: 1rem 1.5rem;
+  width: 50%;
+  border: none;
+}
+
+footer .email-input {
+  display: flex;
+}
+
+footer p {
+  margin: 2rem;
+  text-align: center;
+}
+
+/* ****** Responsive Media Queries ******  */
+
+@media only screen and (max-width: 950px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section .right {
+    display: none;
+  }
+
+  .faq-section .box {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  nav .nav-links ul {
+    display: none;
+  }
+
+  .features-section,
+  .advantages-section-1,
+  .advantages-section-2,
+  .testimonial-section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages-section-1 .left,
+  .features-section .right,
+  .advantages-section-2 .right,
+  .testimonial-section .right {
+    padding: 0 8vw;
+  }
+
+  .testimonial-section .right {
+    width: 100%;
+  }
+
+  .last-section {
+    min-height: 80dvh;
+  }
+
+  footer {
+    padding: 0 0 1rem 0;
+    min-height: max-content;
+  }
+
+  footer .container {
+    padding: 0 6vw 2rem 6vw;
+  }
+
+  .faq-section .content {
+    flex-direction: column;
+  }
+
+  .faq-section .box {
+    width: 100%;
+  }
+
+  .testimonial-section .left {
+    padding: 0;
+  }
+
+  section {
+    margin: 1rem 0;
+    min-height: max-content !important;
+  }
+
+  section > div {
+    margin: 0.5rem;
+  }
+
+  footer p {
+    margin: 0.5rem;
+  }
+
+  .last-section {
+    min-height: 25dvh;
+  }
+
+  .faq-section .box {
+    background-color: #ff5555;
+    border-radius: 1rem;
+    color: #fff;
+  }
+
+  .faq-section .box p {
+    color: #fff;
+  }
+
+  .hero-section img {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}
